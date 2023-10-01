@@ -4,6 +4,10 @@
 
 let resultado1 = "";
 
+for(let i = 1; i < 6; i++){
+  resultado1 += i + " ";
+}
+
 // Escribí tu código acá abajo:
 
 // Ejercicio 2: Utilizar un bucle for para imprimir los números pares del 2 al 10.
@@ -14,6 +18,11 @@ let resultado2 = "";
 
 // Escribí tu código acá abajo:
 
+for(let i = 2; i < 11; i+= 2){
+  resultado2 += i + " ";
+}
+
+
 // Ejercicio 3: Utilizar un bucle for para imprimir los números impares del 1 al 9.
 
 // Resultado esperado restultado = '1 3 5 7 9 ';
@@ -22,11 +31,20 @@ let resultado3 = "";
 
 // Escribí tu código acá abajo:
 
+for(let i = 1; i < 10; i+= 2){
+  resultado3 += i + " ";
+}
+
 // Ejercicio 4: Utilizar un bucle for para calcular la suma de los números del 1 al 5.
 
 let suma = 0;
 
 // Escribí tu código acá abajo:
+
+for(let i = 1; i < 6; i++){
+  suma += i;
+}
+
 
 // Ejercicio 5: Utilizar un bucle for para calcular el producto de los números del 1 al 5.
 
@@ -34,11 +52,20 @@ let producto = 1;
 
 // Escribí tu código acá abajo:
 
+for(let i = 1; i < 6; i++){
+  producto *= i;
+}
+
 // Ejercicio 6: Utilizar un bucle for para imprimir los elementos de un arreglo "frutas".
 
 let frutas = ["manzana", "banana", "uva", "pera", "naranja"];
 
 let resultado6 = "";
+
+let max = frutas.length;
+for(let i = 0; i < max; i++) {
+  resultado6 += frutas[i] + " ";
+}
 
 // Resultado esperado resultado6 = 'manzana banana uva pera naranja ';
 
@@ -50,12 +77,23 @@ let indiceBanana = -1;
 
 // Escribí tu código acá abajo:
 
+for(let i = 0; i < max; i++) {
+  if(frutas[i] == "banana"){
+    indiceBanana = i;
+  }
+}
+
 // Ejercicio 8: Utilizar un bucle for para sumar los elementos de un arreglo "numeros".
 
 let numeros = [3, 6, 9, 12, 15];
 let sumaNumeros = 0;
 
 // Escribí tu código acá abajo:
+
+let lenNumeros = numeros.length;
+for(let i = 0; i < lenNumeros; i++) {
+  sumaNumeros += numeros[i];
+}
 
 // Ejercicio 9: Utilizar un bucle for para imprimir los números del 10 al 1 en orden descendente.
 
@@ -65,10 +103,19 @@ let resultado9 = "";
 
 // Escribí tu código acá abajo:
 
+for(i = 10; i > 0; i--){
+  resultado9 += i + " ";
+}
+
 // Ejercicio 10: Utilizar un bucle for para calcular la potencia de 2 elevado a la n, donde n es un número.
+let potencia = 1;
 let n = 4; // Cambia el valor de n según lo necesites
 
 // Escribí tu código acá abajo:
+
+for(i = 1; i <= n; i++){
+  potencia *= 2;
+}
 
 // Exporta las variables para que estén disponibles para otros módulos
 module.exports = {
